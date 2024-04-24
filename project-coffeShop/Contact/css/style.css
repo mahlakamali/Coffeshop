@@ -1,0 +1,381 @@
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                color: white;
+                list-style: none;
+            }
+            
+            body {
+                background-image: linear-gradient(0deg, rgba(151, 28, 53, 0.8381477591036415) 18%, rgba(255, 255, 255, 0.8689600840336135) 74%);
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            /* back btn */
+            
+            .btns button {
+                outline: none;
+                border: none;
+                padding: 5px;
+                border-radius: 2px;
+                transition: all 0.3s;
+                box-shadow: 0.5px 0.5px 3px black;
+                background-color: rgb(206, 100, 18);
+            }
+            
+            .btns button:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                background-color: rgb(219, 176, 123);
+            }
+            /* back btn */
+            /* start menu hambergeri */
+            
+            #open {
+                display: none;
+            }
+            
+            #menu-item {
+                width: 450px;
+                height: 300px;
+                border-radius: 0px 15px 15px 0px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                transition: all 0.3s;
+                right: 100%;
+                position: fixed;
+                background-color: burlywood;
+            }
+            
+            .show-menu-item {
+                top: 31.9%;
+                transform: translate(100%);
+            }
+            
+            #menu-item ul li {
+                margin-bottom: 20px;
+            }
+            
+            #close {
+                font-size: 30px;
+                color: brown;
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                cursor: pointer;
+            }
+            /* end menu hambergeri */
+            /* start banner */
+            
+            nav {
+                position: relative;
+                text-align: center;
+                color: #fff;
+                font-size: 1.5em;
+                padding: 50px 10px;
+                background-color: brown;
+                font-weight: 600;
+                width: 100%;
+            }
+            
+            nav ul .btns {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+            }
+            
+            a:hover {
+                text-shadow: 1px 1px 5px rgb(172, 78, 78);
+                color: rgb(195, 135, 135);
+                transition: all 0.3s;
+            }
+            /* menu fix */
+            
+            .menu {
+                position: fixed;
+                opacity: 0;
+                visibility: hidden;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                transition: all 0.5s;
+            }
+            
+            .menu ul {
+                display: flex;
+                gap: 20px;
+                color: black;
+            }
+            
+            .show {
+                opacity: 1;
+                visibility: visible;
+            }
+            
+            .menu nav {
+                padding: 20px;
+                border-radius: 15px;
+            }
+            /* end menu fix */
+            
+            #logo-contact {
+                display: inline-block;
+            }
+            
+            #logo-contact {
+                z-index: 1000;
+                position: absolute;
+                width: 90px;
+                height: 90px;
+                margin: 15px;
+            }
+            
+            #logo-contact img {
+                width: 100%;
+                height: 100%;
+            }
+            
+            #banner-contact {
+                margin-top: 20px;
+                height: 500px;
+                text-align: center;
+                align-items: center;
+                width: 100%;
+            }
+            
+            #banner-contact img {
+                height: 95%;
+                width: 50%;
+                border-radius: 5px 5px 5px 5px;
+            }
+            /* end banner */
+            /* start form */
+            
+            #select {
+                margin-top: 10px;
+                padding: 5px 20px;
+                text-align: left;
+                color: black;
+            }
+            
+            #select option {
+                color: black;
+            }
+            
+            #selectform {
+                background-color: brown;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                margin: 50px auto;
+                width: 400px;
+                border-radius: 15px;
+                padding: 30px;
+                box-shadow: 0.5px 2px 10px black;
+            }
+            
+            input {
+                padding: 5px 50px;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                color: black;
+            }
+            
+            #areamessage {
+                color: black;
+                padding: 5px 10px;
+                border-radius: 10px;
+            }
+            
+            #submitform {
+                padding: 5px 15px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                background-color: white;
+                color: rgb(214, 111, 56);
+                transition: all 0.3s;
+            }
+            
+            #submitform:hover {
+                background-color: pink;
+                color: black;
+            }
+            /* end banner */
+            /*  start footer*/
+            
+            #footer {
+                grid-template-columns: repeat( 3, 1fr);
+                color: brown;
+                grid-column-gap: 50px;
+                display: grid;
+                padding: 45px;
+                margin: 120px;
+                margin-bottom: 1em;
+                line-height: 1.8;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
+            }
+            
+            #footer .contact h1,
+            #footer .contact p,
+            #footer .Openinghours h1,
+            #footer .Openinghours p {
+                font-family: 'Playfair Display', serif;
+                text-align: right;
+                color: white;
+            }
+            
+            #footer .aboutus h1 {
+                text-align: left;
+                color: white;
+            }
+            
+            #footer .contact p,
+            #footer .Openinghours p,
+            #footer .aboutus p {
+                color: white;
+                opacity: 0.5;
+                font-family: 'Playfair Display', serif;
+            }
+            
+            .span img {
+                width: 40px;
+                margin-top: 20px;
+                margin-bottom: 0;
+                padding: 5px;
+                transition: all 0.3s;
+            }
+            
+            .span img:hover {
+                transform: rotate(40deg);
+            }
+            /* end footer */
+            
+            @media screen and (max-width: 900px) {
+                .menu {
+                    top: 23%;
+                    left: 50%;
+                }
+            }
+            
+            @media screen and (max-width:800px) {
+                #open {
+                    display: inline-block;
+                    font-size: 30px;
+                    color: white;
+                }
+            }
+            
+            @media screen and (max-width: 700px) {
+                #logo-contact {
+                    display: none;
+                }
+                .menu {
+                    top: 30%;
+                    left: 50%;
+                    font-size: 12px;
+                }
+                nav {
+                    max-width: 100%;
+                }
+                #selectform {
+                    width: 300px;
+                }
+                #footer {
+                    padding: 2px;
+                    margin: 30px;
+                }
+                .span {
+                    display: flex;
+                }
+            }
+            
+            @media screen and ( max-width:580px) {
+                #open {
+                    display: block;
+                    position: absolute;
+                    top: 42%;
+                    font-size: 20px;
+                }
+                #menu-item {
+                    top: 19%;
+                    width: 200px;
+                }
+                .btns {
+                    display: block;
+                    position: absolute;
+                    top: 45%;
+                    width: 100%;
+                }
+                #backpage,
+                #forwardpage {
+                    display: none;
+                }
+                #logo-contact,
+                .menu {
+                    display: none;
+                }
+                nav {
+                    max-width: 100%;
+                    font-size: medium;
+                }
+                #banner-contact img {
+                    width: 300px;
+                }
+                #footer {
+                    grid-column-gap: 15px;
+                    font-size: small;
+                }
+            }
+            
+            @media screen and(max-width:380px) {
+                .btns {
+                    display: block;
+                    position: absolute;
+                    top: 24.5%;
+                }
+                #footer {
+                    display: block;
+                    margin: 2px;
+                    font-size: x-small;
+                }
+            }
+            
+            @media screen and ( max-width:340px) {
+                #open {
+                    display: block;
+                    position: absolute;
+                    top: 42%;
+                    font-size: 20px;
+                    left: 50%;
+                }
+                #menu-item {
+                    top: 20%;
+                    width: 200px;
+                }
+                .btns {
+                    display: none;
+                }
+                #banner-contact img {
+                    width: 250px;
+                    height: 400px;
+                }
+                nav ul .btns {
+                    display: none;
+                }
+                #selectform {
+                    width: 270px;
+                }
+                #footer {
+                    display: block;
+                }
+            }

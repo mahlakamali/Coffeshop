@@ -1,0 +1,211 @@
+        @font-face {
+            font-family: tahrir;
+            src: url(/Gallery/css/font/Satisfy-Regular.woff);
+        }
+        
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        body {
+            height: 4000px;
+            background-image: linear-gradient(201deg, rgba(98, 70, 37, 1) 28%, rgba(137, 95, 51, 1) 53%, rgba(96, 53, 8, 0.7317051820728291) 72%, rgba(109, 67, 22, 0.7317051820728291) 85%);
+        }
+        
+        .logo {
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+        }
+        /* start btn */
+        
+        .btns {
+            z-index: 1000;
+            position: absolute;
+            top: 10%;
+            min-width: 100%;
+        }
+        
+        #backpage {
+            transition: all 0.3s;
+            position: absolute;
+            padding: 5px 10px;
+            left: 2%;
+        }
+        
+        #backpage:hover {
+            background-color: #cf6c3d;
+            color: white;
+            transform: scale(1.1);
+        }
+        
+        #backpage {
+            border-radius: 2px;
+            background-color: burlywood;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: all 0.3s;
+        }
+        /* end btn */
+        /* start slider auto */
+        
+        #banner {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+        }
+        
+        #banner span {
+            z-index: 100;
+            top: 50%;
+            left: 43%;
+            position: absolute;
+            color: white;
+            font-size: 40px;
+            font-family: tahrir;
+        }
+        
+        #banner div {
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 0%;
+            transition: all .8s;
+        }
+        
+        #banner div img {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .8s;
+        }
+        
+        .show {
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        /* end slider auto */
+        /* start slider  */
+        
+        #sliders {
+            width: 90%;
+            height: 70vh;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            cursor: grab;
+        }
+        
+        section div {
+            flex: 1;
+            height: 100%;
+            position: relative;
+            border-radius: 50px;
+            overflow: hidden;
+            transition: all .5s;
+        }
+        
+        section div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .active {
+            flex: 9;
+        }
+        
+        .active:hover {
+            padding: 20px;
+        }
+        
+        #sliders div:hover {
+            transform: scale(1.1);
+        }
+        /* end slider*/
+        /* start footer */
+        
+        #footer {
+            grid-template-columns: repeat( 3, 1fr);
+            color: white;
+            grid-column-gap: 50px;
+            display: grid;
+            padding: 70px;
+            margin: 120px;
+            margin-bottom: 1em;
+            line-height: 1.8;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+        
+        #footer div {
+            border-radius: 0%;
+        }
+        
+        #footer .contact h1,
+        #footer .contact p,
+        #footer .Openinghours h1,
+        #footer .Openinghours p {
+            text-align: right;
+        }
+        
+        #footer .contact p,
+        #footer .Openinghours p,
+        #footer .aboutus p {
+            opacity: 0.5;
+        }
+        /* end footer */
+        
+        @media screen and (max-width:750px) {
+            #sliders {
+                flex-direction: column;
+                flex-wrap: wrap
+            }
+            #sliders>.active {
+                flex: 10;
+            }
+            #sliders>div {
+                flex: 1;
+            }
+            #footer {
+                display: block;
+            }
+        }
+        
+        @media screen and (max-width:600px) {
+            #banner span {
+                left: 32%;
+            }
+            #footer {
+                padding: 0;
+            }
+        }
+        
+        @media screen and (max-width:400px) {
+            #banner span {
+                left: 32%;
+                font-size: 40px;
+            }
+            #footer {
+                display: block;
+                padding: 0;
+                margin: 10px;
+            }
+        }
